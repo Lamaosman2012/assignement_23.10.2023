@@ -79,13 +79,18 @@ footer ul li a {
     color: white;
 }
 
+#index_heading {
+    margin-top: 5%;
+    font-size: 30px;        
+}
 .signup-container {
     text-align: center;
+    overflow: auto;
 }
 
 .signup-container h1 {
     font-size: 24px;
-    margin: 20px 0;
+    margin: 0.5% 0.5%;
     color: darkblue;
     text-align: left;
     justify-content: left;
@@ -95,53 +100,58 @@ footer ul li a {
 .signup-container p {
     font-size: 18px;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 0.5%;
     
 
 }
 
 .signup-container form {
-    margin-top: 50pt;
-    margin-left: 20pt;
+    margin-top: 2%;
+    margin-left: 0.5%;
     text-align: left;
 }
 
 .form-group {
-    margin: 10px 0;
+    margin: 0.5% 0;
     
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px;
     font-weight: bold;
 }
 
 /* Make form fields smaller */
 .form-group input {
     width: 20%; /* Adjust width as needed */
-    padding: 10px;
-    margin: 5px 0;
+    padding: 0.5%;
+    margin: 0.5% 0;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 #signUpButton {
     display: block; /* Use a block-level element to create a line break */
     margin-top: 20px;
-    margin-left: 18%; /* Adjust the margin as needed */
+    margin-left: 17.5%; /* Adjust the margin as needed */
 }
 
+#loginButton {
+    display: block; /* Use a block-level element to create a line break */
+    margin-top: 20px;
+    margin-left: 18.5%; /* Adjust the margin as needed */
+}
 
 /* Style the Contact Form */
 .contact-form {
-    text-align: center;
-    margin: 50px auto; /* Add margin to center the form vertically */
-    max-width: 400px; /* Limit the form width */
+    text-align: left;
+    margin:auto; /* Add margin to center the form vertically */
+    max-width: 95%; /* Limit the form width */
+    overflow: scroll;
 }
 
 .contact-form h1 {
     font-size: 24px;
-    margin-top: 100px;
+    margin-top: 5%;
 }
 
 .contact-form form {
@@ -150,15 +160,22 @@ footer ul li a {
 
 .contact-form label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.5%;
     font-weight: bold;
 }
 
-.contact-form input,
+.contact-form input {
+    width: 50%;
+    padding: 0.5%;
+    margin: 0.5% 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
+    width: 50.5%;
+    padding-top: 3%;
+    margin: 0.5% 0;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -172,4 +189,106 @@ footer ul li a {
 }
 .about_us h1 {
     margin-top: 100px;
+}
+
+@media (max-height: 750px) {
+    /* Styles for screens up to 523px high */
+
+    #index_heading {
+        margin-top: 25%;
+        font-size: 0.5cm;        
+    }
+
+
+.signup-container {
+    text-align: center;
+    overflow: auto;
+}
+
+.signup-container h1 {
+    font-size: 20px;
+    margin: 5% 0;
+    color: darkblue;
+    text-align: left;
+    justify-content: left;
+    margin-top: 70pt;
+}
+
+
+.signup-container form {
+    margin-top: 5%;
+    margin-left: 2%;
+    text-align: left;
+}
+
+.signup-container p {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 2%;
+    
+
+}
+.form-group{
+    margin: 0.5%;
+}
+
+.form-group label {
+    margin: 0.5%;
+    font-size: 15px;
+}
+
+/* Make form fields smaller */
+.form-group input {
+    width: 90%; /* Adjust width as needed */
+    padding: 0.5%;
+    margin: 0.5% 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#signUpButton {
+    display: block; /* Use a block-level element to create a line break */
+    margin-top: 3%;
+    margin-left: 75%; /* Adjust the margin as needed */
+}
+#loginButton {
+    display: block; /* Use a block-level element to create a line break */
+    margin-top: 3%;
+    margin-left: 80%; /* Adjust the margin as needed */
+}
+
+    /* Center the form and adjust the max-height for smaller screens */
+    .contact-form {
+        margin: 0 auto;
+        max-width: 90%;
+        max-height: 90%;
+        overflow: scroll;
+    }
+
+    /* Reduce the font size of the h1 for smaller screens */
+    .contact-form h1 {
+        margin: auto;
+        margin-top: 30%;
+        font-size: 20px;
+    }
+
+    .contact-form label {
+        display: block;
+        margin-top: 5%;
+        font-weight: bold;
+    }
+    
+
+    /* Adjust the input and textarea widths to fit the screen */
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        margin: auto;
+    }
+    
+    /* Increase the padding of the form elements for better touch input on mobile */
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        margin: auto;
+        padding: 5px;
+    }
 }
